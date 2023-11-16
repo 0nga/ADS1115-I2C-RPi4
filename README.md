@@ -1,7 +1,9 @@
 # Interfacing ADS1115 with Raspberry pi 4 using I2C (BCM2835)
 
+### Install BCM2835 Library
 First of all u need to install BCM2835.h library (guide @ https://github.com/0nga/Bcm2835)
 
+### Connect the components
 Download the i2cADS1115.c source file, connect all the components as shown in the figure below
 
 
@@ -13,15 +15,18 @@ Download the i2cADS1115.c source file, connect all the components as shown in th
 
 
 
+### I2C Interface
 
-Make sure u have activated the I2C interface and everything is workking properly
+Make sure u have activated the I2C interface, if u are not sure, try this:
 
 ```bash
 sudo raspi-config
 ```
 go to interface options, and activate I2C.
 
-Try this to see if the RPi see correctly ur I2C device
+
+### I2C Address
+To see if the RPi see correctly ur I2C device, try this:
 
 ```bash
 sudo apt-get install i2c-tools
@@ -30,7 +35,6 @@ sudo i2cdetect -y 1
 that command will print out a matrix showing the addresses of all I2C devices currently connected to RPi as shown in the figure.
 
 ![Results of i2cdetect](i2cDetectExample.png)
-
 
 
 
