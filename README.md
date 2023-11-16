@@ -6,14 +6,7 @@ First of all u need to install BCM2835.h library (guide @ https://github.com/0ng
 ### Connect the components
 Download the i2cADS1115.c source file, connect all the components as shown in the figure below
 
-
-
-
-
-
-
-
-
+![Circuit](RPi-ADS1115-POT.png)
 
 ### I2C Interface
 
