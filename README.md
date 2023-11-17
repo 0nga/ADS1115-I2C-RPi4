@@ -1,4 +1,4 @@
-# Interfacing ADS1115 with Raspberry pi 4 using I2C (BCM2835)
+# ADS1115 with Raspberry pi 4 and I2C (BCM2835.h)
 
 ### Install BCM2835 Library
 First of all u need to install BCM2835.h library (guide @ https://github.com/0nga/Bcm2835)
