@@ -27,7 +27,7 @@ sudo i2cdetect -y 1
 ```
 that command will print out a matrix showing the addresses of all I2C devices currently connected to RPi as shown in the figure.
 
-![Results of i2cdetect](i2cDetectExample.png)
+![Results of i2cdetect](i2cDetectOk.png)
 
 
 
