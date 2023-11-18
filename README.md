@@ -40,7 +40,20 @@ For ADS1115 the default address is 0x48, but u can change it by using the *addr 
 
 If the output is only made of dashed lines -> the I2C device is not working, or isn't connected properly (or u forgot to activate I2C interface!) 
 
+### Reset i2c driver
+If you somehow fucked up the i2c, run this terminal commands to reset it.
 
+disable the I2C driver with
+```bash
+sudo rmmod i2c_dev
+sudo rmmod i2c_bcm2708
+```
+
+re-enable it with
+```bash
+sudo modprobe i2c_bcm2708
+sudo modprobe i2c_dev
+```
 
 
 
